@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <style type="text/css">
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container{
+  background-color: hsl(213, 19%, 18%);
+  height: 410px;
+  width: 380px;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon-star{
+  padding: 10px;
+  margin: 0 auto 0 0;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(216, 12%, 54%);
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+     <!-- Rating state start -->
+
+    <div class="rating-state">
+      <div class="icon-star">
+        <img src="images/icon-star.svg">
+      </div>
+      
+      <div class="txt-content">
+        <h2>How did we do?</h2>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+
+      <div class="rating-row">
+        <div class="rate-step" id="rate-1">1</div>
+        <div class="rate-step" id="rate-2">2</div>
+        <div class="rate-step" id="rate-3">3</div>
+        <div class="rate-step" id="rate-4">4</div>
+        <div class="rate-step" id="rate-5">5</div>
+      </div>
+
+      <button>Submit</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-you-state">
+      
+      You selected <!-- Add rating here --> out of 5
+
+      Thank you!
+
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </div>
+
+    <!-- Thank you state end -->
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <img src="design/desktop-design.jpg">
+</body>
+</html>
